@@ -1,0 +1,53 @@
+select {
+    width: 100%;
+    padding: 10px 6px;
+    display: inline-block;
+    border: 3px solid #5FA4F0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: none;
+    width: 16.5rem;
+}
+
+select:focus {
+    border: 3px solid #5FA4F0;
+}
+
+select::placeholder {
+    color: #F5F5F5;
+    font-weight: medium;
+}
+
+option {
+    color: #5FA4F0;
+    font-weight: medium;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 7px;
+    display: inline-block;
+    border: 3px solid #5FA4F0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: none;
+    width: 16.5rem;
+    color: #F5F5F5;
+}
+
+textarea::placeholder {
+    color: #F5F5F5;
+    font-weight: medium;
+}
+
+.heure {
+    width: 100%;
+    padding: 10px 7px;
+    display: inline-block;
+    border: 3px solid #5FA4F0;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background: none;
+    width: 8rem;
+    color: #F5F5F5;
+}

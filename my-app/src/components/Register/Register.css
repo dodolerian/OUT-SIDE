@@ -7,10 +7,6 @@
     color : #ffff;
 }
 
-body {
-    background-color: #6130EA;
-}
-
 .out {
     color: #5FA4F0;
     font-size: 3.5rem;
@@ -55,7 +51,6 @@ input {
     align-items: center;
     width: 15rem;
     padding: 10px;
-    margin: 10px 0;
     border-radius: 15px;
     border: 3px solid #5FA4F0;
     background:none;

@@ -7,55 +7,49 @@
     color : #ffff;
 }
 
-header {
+.nightparty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 100rem;
+    margin: 0 auto;
+    /* background-color: black; */
+}
+
+.Card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 20rem;
+    height: 20rem;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #5FA4F0;
+    box-shadow: 0 0 10px #5FA4F0;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 100px;
-    position: fixed;
-    z-index: 1;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    height: 100%;
+    padding: 10px;
 }
 
-li {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 0rem;
-    margin-left: 5rem;
-}
-
-img {
-    width: 120px;
-    height: 120px;
-}
-.btn-nav {
+.btn-card {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.btn-nav:hover {
-    color: #5FA4F0;
-}
-
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 10rem;
+    width: 16rem;
     padding: 5px;
-    margin: 10px 10px;
+    margin: 10px 0;
     border-radius: 20px;
-    background: #5FA4F0;
+    background: #6130EA;
     border: none;
     font-weight: bold;
     cursor: pointer;
@@ -63,6 +57,6 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
-    background: #5491D3;
+.btn-card:hover {
+    background: #B224FF;
 }
