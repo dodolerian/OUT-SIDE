@@ -8,17 +8,25 @@ const Register = () => {
 
     const RegisterConnect = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:8888/register', {
-            firstName: e.target.firstName.value,
-            lastName: e.target.lastName.value,
-            username: e.target.username.value,
+    
+        // Validation du formulaire
+        if (!e.target.name.value || !e.target.surname.value || !e.target.pseudo.value || !e.target.email.value || !e.target.password.value) {
+            alert('Veuillez remplir tous les champs du formulaire.');
+            return;
+        }
+    
+        // Envoi de la requête POST
+        await axios.post('http://localhost:3001/register', {
+            name: e.target.name.value,
+            surname: e.target.surname.value,
+            pseudo: e.target.pseudo.value,
             email: e.target.email.value,
             password: e.target.password.value,
         }).then(() => {
-            navigate('/login');
-            return;
+            navigate('/nightparty');
         }).catch((error) => {
             console.log(error);
+            alert('Une erreur s\'est produite lors de l\'inscription. Veuillez réessayer.');
         });
     };
     return (
@@ -27,23 +35,23 @@ const Register = () => {
                 <h1 className='out'>OUT <label className='side'>SIDE</label></h1>
                 <label>
                     <p>First Name</p>
-                    <input type="text" placeholder='John' />
+                    <input type="text" name='name' placeholder='John' />
                 </label>
                 <label>
                     <p>Last Name</p>
-                    <input type="text" placeholder='Doe' />
+                    <input type="text" name='surname' placeholder='Doe' />
                 </label>
                 <label>
                     <p>Username</p>
-                    <input type="text" placeholder='JohnDoe' />
+                    <input type="text" name='pseudo' placeholder='JohnDoe' />
                 </label>
                 <label>
                     <p>e-mail</p>
-                    <input type="text" placeholder='exemple.com' />
+                    <input type="text" name='email' placeholder='exemple.com' />
                 </label>
                 <label>
                     <p>Password</p>
-                    <input type="password" placeholder='****' />
+                    <input type="password" name='password' placeholder='****' />
                 </label>
                 
                 <button className="bouton-register" type="submit">Register</button>

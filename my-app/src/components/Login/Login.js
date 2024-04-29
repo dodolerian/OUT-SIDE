@@ -8,7 +8,7 @@ const Login = () => {
 
     const LoginConnect = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:8888/login', {
+        await axios.post('http://localhost:3001/login', {
             email: e.target.email.value,
             password: e.target.password.value,
         }).then(() => {

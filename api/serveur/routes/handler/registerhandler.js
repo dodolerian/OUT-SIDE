@@ -9,6 +9,12 @@ const valideReq = joi.object({
 })
 export async function registerhandler(req, res){
   const isValide = valideReq.validate(req.body);
+  res.header("Access-Control-Allow-Origin", "*");
+    res.header(
+      "Access-Control-Allow-Methods",
+      "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+    );
+  res.header("Access-Control-Allow-Headers","*");
   if(isValide.error){
     return res.status(400).json({"message":"erreur d'insertion"});
   }
