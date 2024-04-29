@@ -2,6 +2,7 @@ import React from 'react';
 import './NightParty.css';
 import Navbar from '../Home/Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import Card from './Card/Card';
 
 const NightParty = () => {
     return (
@@ -17,7 +18,9 @@ const NightParty = () => {
                             <Link to="/post"><button className='btn-card'>Create Post</button></Link>
                         </div>
                     </div>
+                    <Card />
                 </div>
+                
             </main>
 
         </div>

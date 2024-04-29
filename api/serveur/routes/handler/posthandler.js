@@ -9,6 +9,7 @@ const valideReq = joi.object({
   content: joi.string().required(),
   timetable: joi.date().timestamp().required()
 })
+
 export async function posthandler(req, res){
   const isValide = valideReq.validate(req.body);
   res.header("Access-Control-Allow-Origin", "*");
@@ -23,5 +24,4 @@ export async function posthandler(req, res){
   const checkerror=post([req.body["time"],req.body["title"],req.body["location"],req.body["participant"], req.body["content"],req.body["timetable"]]);
   return res.status(200).json({"message":"valider"});
   
-
 }

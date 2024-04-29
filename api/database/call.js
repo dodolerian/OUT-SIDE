@@ -13,3 +13,8 @@ export async function post(params){ //params c'est linput du form
   `;
   Exec(query,params);
 }
+
+export async function posts(params){ //params c'est linput du form
+  const query=`SELECT title FROM post`;
+  Exec(query,params);
+}
