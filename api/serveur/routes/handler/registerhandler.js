@@ -1,6 +1,6 @@
 import { register } from "../../../database/call.js";
 import joi from 'joi';
-
+  
 const valideReq = joi.object({
   name: joi.string().required(),
   surname: joi.string().required(),

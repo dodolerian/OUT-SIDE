@@ -23,7 +23,7 @@ export async function Select(query, params = []){
     });
 }
 export function Exec(query, params){
-    let db = open('../database/bdd.db');
+    let db = open('./bbd.db');
     db.run(query, params,function(err) {
         if (err) {
           return console.error(err.message);
