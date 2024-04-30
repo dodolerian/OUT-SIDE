@@ -1,0 +1,12 @@
+CREATE TABLE "user" 
+(
+  id VARCHAR(32) NOT NULL,
+  name VARCHAR(100) NOT NULL,
+  surname VARCHAR(100) NOT NULL,
+  pseudo VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  role VARCHAR(50),
+  xp int,
+  ban BOOLEAN NOT NULL
+)

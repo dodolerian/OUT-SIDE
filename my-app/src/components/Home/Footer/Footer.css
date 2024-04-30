@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color : #ffff;
+}
+
+footer {
+    width: 100%;
+    height: 10rem;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    bottom: 0;
+}
+
+.Mention-légales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #348888;
+    padding: 2rem;
+}
+
+.Contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #348888;
+    padding: 2rem;
+}
+
+.Réseaux-sociaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #348888;
+    padding: 2rem;
+}
